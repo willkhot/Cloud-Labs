@@ -2,9 +2,9 @@
 
 ## Overview
 
-This is my first AWS lab in the cloud labs section. I did it in an AWS Academy sandbox account that came with three IAM users (`user-1`, `user-2`, `user-3`), three user groups, and an EC2 instance called **LabHost** already set up.
+My first AWS lab was all about **Identity and Access Management (IAM)**, the service that controls who can sign in to an AWS account and what they're allowed to do.
 
-First I looked around IAM to see what the users and groups had. None of the users had any permissions or belonged to any groups yet. Each group had a policy attached: two used AWS managed policies and one used an inline policy. Then I followed a business scenario where I put each user into the group that matched their job. Last, I signed in as each user in a private browser window and tested what they could and couldn't do in S3 and EC2.
+I started by exploring three IAM users (`user-1`, `user-2`, `user-3`) and three user groups. None of the users had any permissions yet. Each group had a policy attached: two used AWS managed policies and one used an inline policy. Then I followed a business scenario and put each user into the group that matched their job. Last, I signed in as each user in a private browser window and tested what they could and couldn't do in S3 and EC2, including trying to stop an EC2 instance called **LabHost**.
 
 The big takeaway is that permissions should go on **groups**, not individual users. When someone is added to a group they get exactly what that job needs, and anything outside of that is denied by default.
 
@@ -20,7 +20,7 @@ The big takeaway is that permissions should go on **groups**, not individual use
 
 | Category | Tools |
 |---|---|
-| Cloud platform | Amazon Web Services (AWS Academy sandbox) |
+| Cloud platform | Amazon Web Services (AWS) |
 | Services | IAM, Amazon S3, Amazon EC2 |
 | Objects | IAM users, user groups, AWS managed policies, inline policies |
 | Region | US East (N. Virginia) `us-east-1` |
@@ -37,7 +37,7 @@ The big takeaway is that permissions should go on **groups**, not individual use
 
 ### 1.2 IAM users
 
-**Access management → IAM users** lists the users. Besides the lab's `awsstudent` user, there were `user-1`, `user-2`, and `user-3`, each in **0** groups.
+**Access management → IAM users** lists the users. Besides the `awsstudent` user, there were `user-1`, `user-2`, and `user-3`, each in **0** groups.
 
 ![IAM users](screenshots/02-iam-users.png)
 
@@ -216,7 +216,7 @@ After refreshing, LabHost showed as **Stopped**.
 
 ![LabHost stopped](screenshots/25-labhost-stopped.png)
 
-Then I closed the private window and submitted the lab.
+Then I closed the private window.
 
 ### Results
 
@@ -240,6 +240,6 @@ Then I closed the private window and submitted the lab.
 
 ---
 
-> **Note:** Screenshots are from a temporary AWS Academy lab account. The AWS account ID, my lab session username, ARNs, the access key ID, the IAM sign-in URLs, public IP addresses and public DNS names, and the encoded authorization message have been redacted. `user-1`, `user-2`, and `user-3` are sample users provided by the lab, and the lab environment was ended after I finished.
+> **Note:** Screenshots are from a temporary AWS lab account. The AWS account ID, my lab session username, ARNs, the access key ID, the IAM sign-in URLs, public IP addresses and public DNS names, and the encoded authorization message have been redacted. `user-1`, `user-2`, and `user-3` are sample users that were already set up in the account, and the environment was shut down after I finished.
 
 [← Back to AWS Labs](../)
