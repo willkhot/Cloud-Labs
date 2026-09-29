@@ -230,13 +230,13 @@ Then I closed the private window.
 
 ## What I Learned
 
-- IAM is **deny by default**. A brand-new user can't do anything until a policy allows it
-- Putting permissions on **groups** instead of on individual users is easier to manage. When someone changes jobs, you just move them to a different group
-- How to read a policy's JSON: `Effect`, `Action`, and `Resource`, and how wildcards like `ec2:Describe*` cover a whole set of actions
-- The difference between **AWS managed** policies (reusable, maintained by AWS) and **inline** policies (tied to one identity, good for one-off cases)
-- This is the **principle of least privilege** in practice. Each user got only what their job needed: user-2 could look at EC2 but not stop anything, and user-3 could stop instances but still couldn't launch or terminate them
-- IAM users sign in with the account's own sign-in URL, and a private browser window is an easy way to test another user without signing out of your own session
-- Console access without MFA shows up as a warning in IAM, which is a reminder to turn on MFA for real users
+- A new user can't do anything until a policy says they can. Everything is denied by default.
+- It's much easier to give permissions to groups than to individual users. If someone changes jobs, you just move them to a different group.
+- How to read a basic policy: whether it allows something, which actions it covers, and which resources it applies to
+- The difference between managed policies, which can be reused, and inline policies, which belong to just one user or group
+- What least privilege looks like in practice: user-2 could look at EC2 but not stop anything, and user-3 could stop instances but couldn't create or delete them
+- A private browser window is an easy way to test as another user without signing out of my own account
+- Real users should have MFA turned on, even though it was off in this lab
 
 ---
 
