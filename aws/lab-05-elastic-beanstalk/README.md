@@ -24,7 +24,7 @@ What I noticed most is how little I had to do. I uploaded one zip file, and the 
 
 ## Architecture
 
-This is what the environment looked like once I explored it in Task 3.
+This is the architecture.
 
 ![Architecture of the Elastic Beanstalk environment](screenshots/00-architecture.png)
 
@@ -137,6 +137,6 @@ On an instance's **Security** tab, the security group has one inbound rule: TCP 
 
 ---
 
-> **Note:** Screenshots are from a temporary AWS lab account. The AWS account ID, my lab session username, the environment and application names, the environment URL, public IP addresses and DNS names, ARNs, and the IDs of the instances, security groups, VPC, subnets, load balancer, and launch template have been redacted. The architecture diagram is my own drawing. The environment was shut down after I finished.
+> **Note:** Screenshots are from a temporary AWS lab account. The AWS account ID, my lab session username, the environment and application names, the environment URL, public IP addresses and DNS names, ARNs, and the IDs of the instances, security groups, VPC, subnets, load balancer, and launch template have been redacted. The environment was shut down after I finished.
 
 [← Back to AWS Labs](../)

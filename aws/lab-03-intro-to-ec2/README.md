@@ -27,7 +27,7 @@ The part that stood out was Task 3. The web server was running the whole time, b
 
 ## Architecture
 
-This is what I built. The VPC and subnet were already set up in the lab account.
+This is the architecture.
 
 ![Architecture of the web server I launched](screenshots/00-architecture.png)
 
@@ -224,6 +224,6 @@ This is the stop protection I turned on in Task 4.
 
 ---
 
-> **Note:** Screenshots are from a temporary AWS lab account. The AWS account ID, my lab session username, the public IP addresses and public DNS names, the SSH key fingerprint, and the IDs of the instances, VPC, subnet, security group, and volume have been redacted. The architecture diagram is my own drawing. The environment was shut down after I finished.
+> **Note:** Screenshots are from a temporary AWS lab account. The AWS account ID, my lab session username, the public IP addresses and public DNS names, the SSH key fingerprint, and the IDs of the instances, VPC, subnet, security group, and volume have been redacted. The environment was shut down after I finished.
 
 [← Back to AWS Labs](../)

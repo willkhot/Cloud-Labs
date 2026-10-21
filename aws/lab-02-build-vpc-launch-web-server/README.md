@@ -24,7 +24,7 @@ At the end I opened the instance's public DNS name in a browser and the web page
 
 ## Architecture
 
-This is what I had built by the end of the lab.
+This is the architecture.
 
 ![Architecture of the VPC and web server](screenshots/00-architecture.png)
 
@@ -205,6 +205,6 @@ For that page to load, the request had to come in through the internet gateway, 
 
 ---
 
-> **Note:** Screenshots are from a temporary AWS lab account. The AWS account ID, my lab session username, the public IP addresses and public DNS names, and the IDs of the VPC, subnets, gateways, route tables, and instances have been redacted. The architecture diagram is my own drawing. The environment was shut down after I finished.
+> **Note:** Screenshots are from a temporary AWS lab account. The AWS account ID, my lab session username, the public IP addresses and public DNS names, and the IDs of the VPC, subnets, gateways, route tables, and instances have been redacted. The environment was shut down after I finished.
 
 [← Back to AWS Labs](../)

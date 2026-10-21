@@ -34,7 +34,7 @@ In the end, Alice and Bob could each launch and manage their own EC2 instance, b
 
 ## Lab Setup
 
-This is my own drawing of what I set up.
+This is the architecture.
 
 ![Lab setup: boundary, group, users, tags, and instances](screenshots/00-architecture.png)
 
@@ -165,6 +165,6 @@ This is a big part of why permissions matter. Limiting who can launch resources,
 
 ---
 
-> **Note:** Screenshots are from a shared course AWS account. The account ID, my university ID (replaced with `ssoid`), ARNs, instance IDs, public DNS names, and the encoded authorization message have been redacted. The lab setup diagram is my own drawing. All resources I created were deleted after the lab.
+> **Note:** Screenshots are from a shared course AWS account. The account ID, my university ID (replaced with `ssoid`), ARNs, instance IDs, public DNS names, and the encoded authorization message have been redacted. All resources I created were deleted after the lab.
 
 [← Back to AWS Labs](../)

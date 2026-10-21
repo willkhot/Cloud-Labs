@@ -25,6 +25,8 @@ To check that it worked, I went back to the EC2 console and saw that `instance1`
 
 ## Architecture
 
+This is the architecture.
+
 ![EventBridge triggers the Lambda function, which stops the EC2 instance](screenshots/00-architecture.png)
 
 ---
@@ -142,6 +144,6 @@ If I started the instance again, it would be stopped again within a minute, beca
 
 ---
 
-> **Note:** Screenshots are from a temporary AWS lab account. The AWS account ID, my lab session username, the function and instance ARNs, the public IP addresses and public DNS names, and the IDs of the instances, VPC, and subnet have been redacted. The architecture diagram is my own drawing. The environment was shut down after I finished.
+> **Note:** Screenshots are from a temporary AWS lab account. The AWS account ID, my lab session username, the function and instance ARNs, the public IP addresses and public DNS names, and the IDs of the instances, VPC, and subnet have been redacted. The environment was shut down after I finished.
 
 [← Back to AWS Labs](../)
