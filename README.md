@@ -28,11 +28,6 @@ Hands-on labs on public cloud platforms, organized by provider. Each lab has a w
 - Controlling access with permissions boundaries, group policies, and tags, and why limiting permissions also keeps cloud costs down
 - Adding EBS storage to an instance, backing it up with a snapshot, and restoring the data to a new volume
 
-## More Labs
-
-- [🐧 Linux Labs](https://github.com/willkhot/Linux-Labs)
-- [🔐 IAM Labs](https://github.com/willkhot/IAM-Labs)
-
 ## Author
 
 **Will Khotsyphom**
