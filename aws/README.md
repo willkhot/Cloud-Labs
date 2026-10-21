@@ -12,6 +12,6 @@ Hands-on labs on Amazon Web Services.
 | 06 | [Access Control with IAM: Permissions Boundaries, Groups, and Tags](lab-06-iam-access-control-abac/) | Permissions boundaries, implicit deny, group policies, tag-based access control (ABAC), cloud cost and cleanup |
 | 07 | [Working with Amazon EBS: Volumes and Snapshots](lab-07-working-with-ebs/) | EBS volumes, attaching and mounting, ext3 and /etc/fstab, snapshots, restoring a volume from a snapshot |
 
-> See also: EC2 launch, security groups and SSH key pairs in [Linux Lab 01](../../linux-labs/lab-01-deploy-linux-servers/).
+> See also: EC2 launch, security groups and SSH key pairs in [Linux Lab 01](https://github.com/willkhot/Linux-Labs/tree/main/lab-01-deploy-linux-servers) in my Linux Labs.
 
 [← Back to Cloud Labs](../)
