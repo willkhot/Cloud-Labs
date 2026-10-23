@@ -11,6 +11,7 @@ Hands-on labs on Amazon Web Services.
 | 05 | [AWS Elastic Beanstalk: Deploying a Web App](lab-05-elastic-beanstalk/) | Elastic Beanstalk environments, application deployment, load balancer, Auto Scaling group, security groups |
 | 06 | [Access Control with IAM: Permissions Boundaries, Groups, and Tags](lab-06-iam-access-control-abac/) | Permissions boundaries, implicit deny, group policies, tag-based access control (ABAC), cloud cost and cleanup |
 | 07 | [Working with Amazon EBS: Volumes and Snapshots](lab-07-working-with-ebs/) | EBS volumes, attaching and mounting, ext3 and /etc/fstab, snapshots, restoring a volume from a snapshot |
+| 08 | [Block and Object Storage: Amazon EBS and Amazon S3](lab-08-block-and-object-storage/) | EBS volumes, parted and GPT, ext4, mounting by UUID in /etc/fstab, moving a volume between instances, S3 buckets, Block Public Access, S3 REST API with Postman |
 
 > See also: EC2 launch, security groups and SSH key pairs in [Linux Lab 01](https://github.com/willkhot/Linux-Labs/tree/main/lab-01-deploy-linux-servers) in my Linux Labs.
 
