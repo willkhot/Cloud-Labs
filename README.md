@@ -14,6 +14,7 @@ Hands-on labs on public cloud platforms, organized by provider. Each lab has a w
 | 06 | [Access Control with IAM: Permissions Boundaries, Groups, and Tags](aws/lab-06-iam-access-control-abac/) | Permissions boundaries, implicit deny, group policies, tag-based access control (ABAC), cloud cost and cleanup |
 | 07 | [Working with Amazon EBS: Volumes and Snapshots](aws/lab-07-working-with-ebs/) | EBS volumes, attaching and mounting, ext3 and /etc/fstab, snapshots, restoring a volume from a snapshot |
 | 08 | [Block and Object Storage: Amazon EBS and Amazon S3](aws/lab-08-block-and-object-storage/) | EBS volumes, parted and GPT, ext4, mounting by UUID in /etc/fstab, moving a volume between instances, S3 buckets, Block Public Access, S3 REST API with Postman |
+| 09 | [Build a Database Server with Amazon RDS and Connect a Web App](aws/lab-09-rds-database-web-app/) | Amazon RDS MySQL, Multi-AZ deployment, DB subnet groups, security group to security group rules, private subnets, connecting a web app |
 
 > An earlier AWS EC2 deployment is part of [Linux Lab 01](https://github.com/willkhot/Linux-Labs/tree/main/lab-01-deploy-linux-servers) in my Linux Labs.
 
@@ -29,6 +30,7 @@ Hands-on labs on public cloud platforms, organized by provider. Each lab has a w
 - Controlling access with permissions boundaries, group policies, and tags, and why limiting permissions also keeps cloud costs down
 - Adding EBS storage to an instance, backing it up with a snapshot, and restoring the data to a new volume
 - Partitioning and mounting a disk on Linux, moving it between servers, and reading private S3 objects through the S3 API
+- Launching a Multi-AZ RDS database in private subnets that only my web server can reach, and connecting an app to it
 
 ## Author
 
