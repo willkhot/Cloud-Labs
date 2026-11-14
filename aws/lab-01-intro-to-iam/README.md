@@ -25,6 +25,12 @@ The big takeaway is that permissions should go on **groups**, not individual use
 | Objects | IAM users, user groups, AWS managed policies, inline policies |
 | Region | US East (N. Virginia) `us-east-1` |
 
+## Lab Setup
+
+This is the architecture.
+
+![Lab setup: users, groups, policies, and the services they can reach](screenshots/00-architecture.png)
+
 ---
 
 ## Task 1 — Explore the Users and Groups
