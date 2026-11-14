@@ -16,6 +16,7 @@ Hands-on labs on public cloud platforms, organized by provider. Each lab has a w
 | 08 | [Block and Object Storage: Amazon EBS and Amazon S3](aws/lab-08-block-and-object-storage/) | EBS volumes, parted and GPT, ext4, mounting by UUID in /etc/fstab, moving a volume between instances, S3 buckets, Block Public Access, S3 REST API with Postman |
 | 09 | [Build a Database Server with Amazon RDS and Connect a Web App](aws/lab-09-rds-database-web-app/) | Amazon RDS MySQL, Multi-AZ deployment, DB subnet groups, security group to security group rules, private subnets, connecting a web app |
 | 10 | [Triggering a GuardDuty Finding: S3 Block Public Access Disabled](aws/lab-10-guardduty-s3-block-public-access/) | Amazon GuardDuty, S3 Protection, CloudTrail events, account and bucket Block Public Access, Policy:S3 findings, incident response |
+| 11 | [Securing SSH Access to an EC2 Instance](aws/lab-11-secure-ssh-ec2/) | EC2 key pairs, security group inbound rules, SSH from a single /32 IP, removing 0.0.0.0/0, GuardDuty Runtime Monitoring |
 
 > An earlier AWS EC2 deployment is part of [Linux Lab 01](https://github.com/willkhot/Linux-Labs/tree/main/lab-01-deploy-linux-servers) in my Linux Labs.
 
@@ -33,6 +34,7 @@ Hands-on labs on public cloud platforms, organized by provider. Each lab has a w
 - Partitioning and mounting a disk on Linux, moving it between servers, and reading private S3 objects through the S3 API
 - Launching a Multi-AZ RDS database in private subnets that only my web server can reach, and connecting an app to it
 - Using GuardDuty to catch risky S3 changes, like turning off Block Public Access, and knowing how to respond to the finding
+- Locking down SSH on an EC2 instance with a key pair and a security group rule that only allows my IP
 
 ## Author
 
