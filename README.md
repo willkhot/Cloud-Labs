@@ -24,6 +24,7 @@ Hands-on labs on public cloud platforms, organized by provider. Each lab has a w
 | 03 | [Introduction to Amazon EC2](aws/lab-03-intro-to-ec2/) | EC2 launch, user data, monitoring, security group rules, resizing an instance and EBS volume, service quotas, termination and stop protection |
 | 04 | [AWS Lambda: Stopping an EC2 Instance on a Schedule](aws/lab-04-aws-lambda/) | Lambda functions, execution roles, EventBridge schedules, Python with boto3, CloudWatch metrics |
 | 05 | [AWS Elastic Beanstalk: Deploying a Web App](aws/lab-05-elastic-beanstalk/) | Elastic Beanstalk environments, application deployment, load balancer, Auto Scaling group, security groups |
+| 12 | [Scale and Load Balance a Web App: ALB and EC2 Auto Scaling](aws/lab-12-scale-load-balance/) | AMIs, launch templates, Application Load Balancer, target groups and health checks, Auto Scaling groups, target tracking, CloudWatch alarms, load testing |
 
 ### Storage
 
@@ -62,6 +63,7 @@ Hands-on labs on public cloud platforms, organized by provider. Each lab has a w
 - Launching a Multi-AZ RDS database in private subnets that only my web server can reach, and connecting an app to it
 - Using GuardDuty to catch risky S3 changes, like turning off Block Public Access, and knowing how to respond to the finding
 - Locking down SSH on an EC2 instance with a key pair and a security group rule that only allows my IP
+- Putting a load balancer in front of an Auto Scaling group and watching it add servers when CPU spikes
 
 ## Author
 

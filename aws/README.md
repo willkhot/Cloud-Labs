@@ -22,6 +22,7 @@ Hands-on labs on Amazon Web Services.
 | 03 | [Introduction to Amazon EC2](lab-03-intro-to-ec2/) | EC2 launch, user data, monitoring, security group rules, resizing an instance and EBS volume, service quotas, termination and stop protection |
 | 04 | [AWS Lambda: Stopping an EC2 Instance on a Schedule](lab-04-aws-lambda/) | Lambda functions, execution roles, EventBridge schedules, Python with boto3, CloudWatch metrics |
 | 05 | [AWS Elastic Beanstalk: Deploying a Web App](lab-05-elastic-beanstalk/) | Elastic Beanstalk environments, application deployment, load balancer, Auto Scaling group, security groups |
+| 12 | [Scale and Load Balance a Web App: ALB and EC2 Auto Scaling](lab-12-scale-load-balance/) | AMIs, launch templates, Application Load Balancer, target groups and health checks, Auto Scaling groups, target tracking, CloudWatch alarms, load testing |
 
 ## Storage
 
