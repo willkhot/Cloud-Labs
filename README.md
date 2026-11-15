@@ -4,17 +4,44 @@ Hands-on labs on public cloud platforms, organized by provider. Each lab has a w
 
 ## [AWS](aws/)
 
+### Identity and Access
+
 | # | Lab | Topics |
 |---|---|---|
 | 01 | [Introduction to AWS IAM](aws/lab-01-intro-to-iam/) | IAM users, user groups, managed vs inline policies, least privilege, IAM sign-in URL |
+| 06 | [Access Control with IAM: Permissions Boundaries, Groups, and Tags](aws/lab-06-iam-access-control-abac/) | Permissions boundaries, implicit deny, group policies, tag-based access control (ABAC), cloud cost and cleanup |
+
+### Networking
+
+| # | Lab | Topics |
+|---|---|---|
 | 02 | [Build a VPC and Launch a Web Server](aws/lab-02-build-vpc-launch-web-server/) | VPC, public and private subnets, internet gateway, NAT gateway, route tables, security groups, EC2 user data |
+
+### Compute
+
+| # | Lab | Topics |
+|---|---|---|
 | 03 | [Introduction to Amazon EC2](aws/lab-03-intro-to-ec2/) | EC2 launch, user data, monitoring, security group rules, resizing an instance and EBS volume, service quotas, termination and stop protection |
 | 04 | [AWS Lambda: Stopping an EC2 Instance on a Schedule](aws/lab-04-aws-lambda/) | Lambda functions, execution roles, EventBridge schedules, Python with boto3, CloudWatch metrics |
 | 05 | [AWS Elastic Beanstalk: Deploying a Web App](aws/lab-05-elastic-beanstalk/) | Elastic Beanstalk environments, application deployment, load balancer, Auto Scaling group, security groups |
-| 06 | [Access Control with IAM: Permissions Boundaries, Groups, and Tags](aws/lab-06-iam-access-control-abac/) | Permissions boundaries, implicit deny, group policies, tag-based access control (ABAC), cloud cost and cleanup |
+
+### Storage
+
+| # | Lab | Topics |
+|---|---|---|
 | 07 | [Working with Amazon EBS: Volumes and Snapshots](aws/lab-07-working-with-ebs/) | EBS volumes, attaching and mounting, ext3 and /etc/fstab, snapshots, restoring a volume from a snapshot |
 | 08 | [Block and Object Storage: Amazon EBS and Amazon S3](aws/lab-08-block-and-object-storage/) | EBS volumes, parted and GPT, ext4, mounting by UUID in /etc/fstab, moving a volume between instances, S3 buckets, Block Public Access, S3 REST API with Postman |
+
+### Databases
+
+| # | Lab | Topics |
+|---|---|---|
 | 09 | [Build a Database Server with Amazon RDS and Connect a Web App](aws/lab-09-rds-database-web-app/) | Amazon RDS MySQL, Multi-AZ deployment, DB subnet groups, security group to security group rules, private subnets, connecting a web app |
+
+### Security and Monitoring
+
+| # | Lab | Topics |
+|---|---|---|
 | 10 | [Triggering a GuardDuty Finding: S3 Block Public Access Disabled](aws/lab-10-guardduty-s3-block-public-access/) | Amazon GuardDuty, S3 Protection, CloudTrail events, account and bucket Block Public Access, Policy:S3 findings, incident response |
 | 11 | [Securing SSH Access to an EC2 Instance](aws/lab-11-secure-ssh-ec2/) | EC2 key pairs, security group inbound rules, SSH from a single /32 IP, removing 0.0.0.0/0, GuardDuty Runtime Monitoring |
 
