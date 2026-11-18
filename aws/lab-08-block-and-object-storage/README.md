@@ -148,13 +148,13 @@ The UUID was the same on `server-2` because it's stored on the disk. Both files 
 
 ### 3.1 Create the bucket
 
-**S3 → Create bucket.** Bucket names have to be unique across all of AWS, so I used `umsl-<ssoid>` with my university ID. I left **Block all public access** turned on, so every request needs valid AWS credentials.
+**S3 → Create bucket.** Bucket names have to be unique across all of AWS, so I picked a unique name (written as `<bucket-name>` in this write-up). I left **Block all public access** turned on, so every request needs valid AWS credentials.
 
 ![Block all public access is On](screenshots/05-s3-block-public-access.png)
 
 ### 3.2 Upload the objects
 
-1. Uploaded the UMSL Cybersecurity logo (`UMSL_CYBERSECURITY__201 BLKB.png`) to the bucket root
+1. Uploaded a PNG logo image to the bucket root
 2. Created a folder named `breach-data`
 3. Uploaded a JSON file with security breach data into `breach-data/`
 
@@ -183,7 +183,7 @@ Postman uses these to sign each request with Signature Version 4. The keys are t
 ### 4.2 List the objects
 
 ```
-GET https://s3.amazonaws.com/umsl-<ssoid>/?list-type=2
+GET https://s3.amazonaws.com/<bucket-name>/?list-type=2
 ```
 
 `?list-type=2` calls the **ListObjectsV2** API. The response was `200 OK` with XML showing `KeyCount` of **3**: the logo, the `breach-data/` key (0 bytes), and `breach-data/1FB2677D-...json`. The "folder" is just another key.
@@ -195,7 +195,7 @@ GET https://s3.amazonaws.com/umsl-<ssoid>/?list-type=2
 I copied the logo's **Object URL** from the S3 console and sent a GET to it. Postman showed the image in the response body.
 
 ```
-GET https://umsl-<ssoid>.s3.us-east-1.amazonaws.com/UMSL_CYBERSECURITY__201+BLKB.png
+GET https://<bucket-name>.s3.us-east-1.amazonaws.com/<logo-file>.png
 ```
 
 ![Logo returned by GetObject](screenshots/08-postman-get-logo.png)
@@ -205,7 +205,7 @@ GET https://umsl-<ssoid>.s3.us-east-1.amazonaws.com/UMSL_CYBERSECURITY__201+BLKB
 The same thing with the JSON object's URL returned the breach record as JSON.
 
 ```
-GET https://umsl-<ssoid>.s3.us-east-1.amazonaws.com/breach-data/1FB2677D-93C9-4452-92C7-FEA2233B7254.json
+GET https://<bucket-name>.s3.us-east-1.amazonaws.com/breach-data/1FB2677D-93C9-4452-92C7-FEA2233B7254.json
 ```
 
 ![JSON object returned by GetObject](screenshots/09-postman-get-json.png)
@@ -223,6 +223,6 @@ GET https://umsl-<ssoid>.s3.us-east-1.amazonaws.com/breach-data/1FB2677D-93C9-44
 
 ---
 
-> **Note:** Screenshots are from a temporary AWS Academy lab account. The AWS account ID, my lab session username, the owner ID, the instance, volume, and snapshot IDs, my university ID in the bucket name, and a person's name inside the sample breach data have been redacted. The access keys and session token are never shown. The environment was shut down after I finished.
+> **Note:** Screenshots are from a temporary AWS Academy lab account. The AWS account ID, my lab session username, the owner ID, the instance, volume, and snapshot IDs, the bucket name, and a person's name inside the sample breach data have been redacted. The access keys and session token are never shown. The environment was shut down after I finished.
 
 [← Back to AWS Labs](../)

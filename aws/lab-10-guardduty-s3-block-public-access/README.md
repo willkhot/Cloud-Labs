@@ -67,7 +67,7 @@ In the console, I searched for **S3** and opened **General purpose buckets**. Th
 | Setting | Value |
 |---|---|
 | Bucket type | General purpose |
-| Bucket name | `s3bucketumsl-wk` (bucket names have to be unique across all of AWS) |
+| Bucket name | `<bucket-name>` (bucket names have to be unique across all of AWS) |
 | Object Ownership | ACLs disabled (bucket owner enforced), the default |
 | Block Public Access | **Block all public access** on, the default |
 | Bucket Versioning | Disabled, the default |
@@ -91,7 +91,7 @@ The bucket was created.
 
 ## Task 2 — Turn Off Block Public Access on the Bucket
 
-**s3bucketumsl-wk → Permissions → Block public access (bucket settings) → Edit.** I unchecked **Block all public access**, which clears all four settings, and saved.
+**`<bucket-name>` → Permissions → Block public access (bucket settings) → Edit.** I unchecked **Block all public access**, which clears all four settings, and saved.
 
 ![Bucket-level Block Public Access unchecked](screenshots/08-bucket-block-public-access-off.png)
 
@@ -151,10 +151,10 @@ This is the finding from the scenario.
 
 | Field | Value |
 |---|---|
-| Title | Amazon S3 Block Public Access was disabled for the S3 bucket s3bucketumsl-wk |
+| Title | Amazon S3 Block Public Access was disabled for the S3 bucket `<bucket-name>` |
 | Type | `Policy:S3/BucketBlockPublicAccessDisabled` |
 | Caused by | `PutBucketPublicAccessBlock` |
-| Resource | `s3bucketumsl-wk` |
+| Resource | `<bucket-name>` |
 | Severity | Low |
 
 ![Bucket-level finding details](screenshots/17-finding-bucket.png)
